@@ -34,6 +34,24 @@ help one another")
 console.log("Love is not patronizing and charity isn\'t about pity, it is about love. \
 Charity and love are the same -- with charity you give love, so don\'t just give money but\
  reach out your hand instead.")
+let q = "10"
+let ty = console.log(typeof(q))
+console.log(ty == 10)
+let numq = parseInt(q)
+let typeq = console.log(typeof(numq))
+let typeten = console.log(typeof(10))
+console.log(typeq == typeten)
+let floatnum = parseFloat("9.8")
+console.log(typeof(floatnum))
+console.log(Math.round(9.8))
+let py = "python"
+let ja = "jargon"
+console.log(py.includes("on"))
+console.log(ja.includes("on"))
+let sentence = "I hope this course is not full of jargon"
+console.log(sentence.includes("jargon"))
+console.log(Math.floor(Math.random() * 101))
+console.log(Math.floor(Math.random() * 101) + 50)
 
 
 
@@ -41,16 +59,7 @@ Charity and love are the same -- with charity you give love, so don\'t just give
 
 
 
-
-/*Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
-
-Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
-
-Check if 'on' is found in both python and jargon
-
-I hope this course is not full of jargon. Check if jargon is in the sentence.
-
-Generate a random number between 0 and 100 inclusively.
+/*
 
 Generate a random number between 50 and 100 inclusively.
 
