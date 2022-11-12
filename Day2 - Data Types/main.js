@@ -52,20 +52,31 @@ let sentence = "I hope this course is not full of jargon"
 console.log(sentence.includes("jargon"))
 console.log(Math.floor(Math.random() * 101))
 console.log(Math.floor(Math.random() * 101) + 50)
-
-
-
-
+function getrandno(min, max){
+    return Math.floor( Math.random() * (max - min) + min)
+}
+console.log(getrandno(50, 101))
+function getrandint(max){
+    return Math.random() * max
+}
+console.log(getrandint(256))
+//Revisit 
+//Access the 'JavaScript' string characters using a random number. 
+const characters ='JavaScript'
+function generateString(length) {
+    let result = ' ';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result
+}
+console.log(generateString(10))
 
 
 
 /*
 
-Generate a random number between 50 and 100 inclusively.
-
-Generate a random number between 0 and 255 inclusively.
-
-Access the 'JavaScript' string characters using a random number. 
 Use console.log() and escape characters to print the following pattern.
 
 1 1 1 1 1
