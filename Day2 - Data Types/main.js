@@ -72,31 +72,43 @@ function generateString(length) {
     return result
 }
 console.log(generateString(10))
+//End of revisit
+console.log(" \
+1\t1\t1\t1\t1\n\
+2\t1\t2\t4\t8\n\
+3\t1\t3\t9\t27\n\
+4\t1\t4\t16\t64\n\
+5\t1\t5\t25\t125\n "
+)
 
+let x_sentence = "You cannot end a sentence with because because because is a conjunction"
+console.log(x_sentence.substring(30, 55))
 
+//Exercises: Level 3
 
-/*
+let love_sentence = "Love is the best thing in this world. Some found their love and some are sill looking for \
+ their love"
+ let pattern = /love/gi
+console.log(love_sentence.match(pattern))
 
-Use console.log() and escape characters to print the following pattern.
+let second_pattern = /because/gi 
+console.log(x_sentence.match(second_pattern))
 
-1 1 1 1 1
-2 1 2 4 8
-3 1 3 9 27
-4 1 4 16 64
-5 1 5 25 125
-Use substr to slice out the phrase because because because from the following sentence:
-'You cannot end a sentence with because because because is a conjunction'
-*/
+//Revisit 
+//Clean the following text and find the most frequent word (hint, use replace and regular expressions).
+const symbol_sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; \
+ &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re \
+  interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is \
+  30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
 
-/*Exercises: Level 3
-'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
+  console.log(symbol_sentence.replace(/[^a-zA-Z0-9 ]/g, ""))
 
-Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+ 
+/*Calculate the total annual income of the person by extracting the numbers from the following text.
+ 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.' */
+let income_sentence = "He earns 5000 euro from salary per month, 10000 euro annual\
+ bonus, 15000 euro online courses per month."
+ let salary = console.log(income_sentence.match(/\d+/g))
+ console.log(salary)
 
-Clean the following text and find the most frequent word (hint, use replace and regular expressions).
-
-    const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
-Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
-
-tada CONGRATULATIONS ! tada
- */
+  //End of revisit 
