@@ -50,12 +50,12 @@ console.log(now.getTime())
 console.log(now.getDay())
 console.log(now)
 
-/*
+
 let base = prompt("Enter base", )
 let height = prompt("Enter height", )
 let area = 0.5 * base * height
 console.log(`The area of the triangle is ${area}`)
-*/
+
 
 /*
 let a = Number(prompt("Enter side a", ))
