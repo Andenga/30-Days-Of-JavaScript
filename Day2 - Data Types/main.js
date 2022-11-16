@@ -60,19 +60,7 @@ function getrandint(max){
     return Math.random() * max
 }
 console.log(getrandint(256))
-//Revisit 
-//Access the 'JavaScript' string characters using a random number. 
-const characters ='JavaScript'
-function generateString(length) {
-    let result = ' ';
-    const charactersLength = characters.length;
-    for ( let i = 0; i < length; i++ ) {
-        result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result
-}
-console.log(generateString(10))
-//End of revisit
+ 
 console.log(" \
 1\t1\t1\t1\t1\n\
 2\t1\t2\t4\t8\n\
@@ -94,14 +82,16 @@ console.log(love_sentence.match(pattern))
 let second_pattern = /because/gi 
 console.log(x_sentence.match(second_pattern))
 
-//Revisit 
+//Review 
 //Clean the following text and find the most frequent word (hint, use replace and regular expressions).
 const symbol_sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; \
  &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re \
   interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is \
   30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
 
-  console.log(symbol_sentence.replace(/[^a-zA-Z0-9 ]/g, ""))
+console.log(symbol_sentence.replace(/[^a-zA-Z0-9 ]/g, ""))
+//End of review 
+
 
  
 /*Calculate the total annual income of the person by extracting the numbers from the following text.
@@ -112,3 +102,9 @@ let income_sentence = "He earns 5000 euro from salary per month, 10000 euro annu
  console.log(salary)
 
   //End of revisit 
+
+let x_y = 'javascript '
+console.log(x_y[Math.floor(Math.random() * x_y.length)])
+
+  
+  

@@ -50,12 +50,12 @@ console.log(now.getTime())
 console.log(now.getDay())
 console.log(now)
 
-
+/*
 let base = prompt("Enter base", )
 let height = prompt("Enter height", )
 let area = 0.5 * base * height
 console.log(`The area of the triangle is ${area}`)
-
+*/
 
 /*
 let a = Number(prompt("Enter side a", ))
@@ -80,15 +80,7 @@ circumference = 2 * Math.PI * circle_radius
 console.log(`The area of the circle is ${circle_area}`)
 console.log(`The circumference of the circle is ${circumference}`)
 */
-/*
-Calculate the slope, x-intercept and y-intercept of y = 2x -2
 
-Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
-
-Compare the slope of above two questions.
-
-Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
-*/
 /*
 let hours = Number(prompt("Enter hours", ))
 let rate_per_hour = Number(prompt("Enter the rate per hour", ))
@@ -115,7 +107,7 @@ let myAge = 45
 let yourAge = 18
 
 console.log(`I am ${myAge - yourAge} years older than you`)
-
+/*
 let birth_year = Number(prompt("Enter birth year", ))
 
 let Age = now.getFullYear() - birth_year
@@ -125,11 +117,15 @@ if (Age > 18){
 } else{
     console.log(`You are ${Age}. You will be allowed to drive after ${Age_diff} years.`)
 }
-
-
+*/
+/*
 let years = Number(prompt("Enter number of years you live:" ))
 let sec = years * 31536000
 console.log(`You have lived ${sec} seconds`)
+*/
+
+
+
 
 
 
@@ -143,8 +139,21 @@ DD/MM/YYYY HH:mm
 
 
 Exercises: Level 3
-Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
+Create a human readable time format using the Date time object. 
+The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
 YYY-MM-DD HH:mm eg. 20120-01-02 07:05
 
 
 */
+
+
+/*
+Calculate the slope, x-intercept and y-intercept of y = 2x -2
+
+Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
+
+Compare the slope of above two questions.
+
+Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
+*/
+
