@@ -119,7 +119,8 @@ const countries = [
   'Hungary',
   'Ireland',
   'Japan',
-  'Kenya'
+  'Kenya',
+  'iceland'
 ]
 
 let capsarray = []
@@ -135,6 +136,8 @@ for(const countryLength of countries){
 console.log(capsarraylength)
 
 /*
+Research on map
+
 Use the countries array to create the following array of arrays:
 
   [
@@ -151,25 +154,19 @@ Use the countries array to create the following array of arrays:
   ['Japan', 'JAP', 5],
   ['Kenya', 'KEN', 5]
 ]
-
 */
 
-
-
-
-
+let landCountries = []
+function Check(x) {
+    if (x.includes('land'))
+        return x
+}
+landCountries = countries.filter(Check)
+landCountries != [] ? console.log(landCountries) : console.log("All these countries are without land")
 
 
 
 /*
-
-In above countries array, check if there is a country or countries containing the word 'land'.
- If there are countries containing 'land', print it as array. If there is no country containing 
- the word 'land', print 'All these countries are without land'.
-
-['Finland','Ireland', 'Iceland']
-
-
 In above countries array, check if there is a country or countries end with a substring 'ia'.
  If there are countries end with, print it as array. If there is no country containing the word 'ai', 
  print 'These are countries ends without ia'.
