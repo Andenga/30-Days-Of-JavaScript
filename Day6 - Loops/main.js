@@ -164,26 +164,49 @@ function Check(x) {
 landCountries = countries.filter(Check)
 landCountries != [] ? console.log(landCountries) : console.log("All these countries are without land")
 
+let iaarray = []
+function iacountries(y){
+  if(y.endsWith("ia"))
+    return y
+}
+iaarray = countries.filter(iacountries)
+iaarray != [] ? console.log(iaarray) : console.log("These are countries that end without ia")
+
+let _5charcountry = []
+function charcountry(v){
+  if(v.length === 5)
+  return v
+}
+_5charcountry = countries.filter(charcountry)
+if (_5charcountry != []){
+  console.log(_5charcountry)
+}
+
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+]
+
+const mernStack = ['MongoDB', 'Express', 'React', 'Node']
+
+/*
+Using the above countries array, find the country containing the biggest number of characters : Ethiopia
+Find the longest word in the webTechs array
+*/
+
+
 
 
 /*
-In above countries array, check if there is a country or countries end with a substring 'ia'.
- If there are countries end with, print it as array. If there is no country containing the word 'ai', 
- print 'These are countries ends without ia'.
-
-['Albania', 'Bolivia','Ethiopia']
-
-Using the above countries array, find the country containing the biggest number of characters.
-
-Ethiopia
-Using the above countries array, find the country containing only 5 characters.
-
-['Japan', 'Kenya']
-Find the longest word in the webTechs array
-
 Use the webTechs array to create the following array of arrays:
 
 [["HTML", 4], ["CSS", 3],["JavaScript", 10],["React", 5],["Redux", 5],["Node", 4],["MongoDB", 7]]
+
 An application created using MongoDB, Express, React and Node is called a MERN stack app.
  Create the acronym MERN by using the array mernStack
 
@@ -218,24 +241,6 @@ Extract all the countries containing only four characters from the countries arr
 Extract all the countries containing two or more words from the countries array and print it as array
 Reverse the countries array and capitalize each country and stored it as an array
 tada CONGRATULATIONS ! tada
-
-
-
-
-
-const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB'
-]
-
-const mernStack = ['MongoDB', 'Express', 'React', 'Node']
-
-
 
 
 */
