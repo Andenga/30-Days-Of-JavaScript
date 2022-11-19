@@ -182,6 +182,11 @@ if (_5charcountry != []){
   console.log(_5charcountry)
 }
 
+/*
+Using the above countries array, find the country containing the biggest number of characters : Ethiopia
+Find the longest word in the webTechs array
+*/
+
 const webTechs = [
   'HTML',
   'CSS',
@@ -194,53 +199,55 @@ const webTechs = [
 
 const mernStack = ['MongoDB', 'Express', 'React', 'Node']
 
-/*
-Using the above countries array, find the country containing the biggest number of characters : Ethiopia
-Find the longest word in the webTechs array
-*/
-
-
-
-
-/*
+/* Review
 Use the webTechs array to create the following array of arrays:
-
 [["HTML", 4], ["CSS", 3],["JavaScript", 10],["React", 5],["Redux", 5],["Node", 4],["MongoDB", 7]]
+*/
+let arrweblength = []
+arrweb = []
+for(const arrwebTechs of webTechs){
+  console.log(`"${arrwebTechs}", ${arrwebTechs.length}`)
+  arrweblength.push(arrwebTechs.length)
+  arrweb.push(arrwebTechs)
+}
+console.log(arrweblength)
+console.log(arrweb)
+//End of review
 
-An application created using MongoDB, Express, React and Node is called a MERN stack app.
- Create the acronym MERN by using the array mernStack
+//Review
+for(const mern of mernStack){
+  console.log(mern[0])
+}
+//End of review 
 
-Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] 
-using a for loop or for of loop and print out the items.
+for(const webtech of webTechs){
+  console.log(webtech)
+}
 
-This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using 
-loop without using a reverse method.
+let fruits = ['banana', 'orange', 'mango', 'lemon']
 
+const arrfruits = []
+for(i = 0; i <= fruits.length-1; i++){
+  arrfruits.unshift(fruits[i])
+}
+console.log(arrfruits)
+
+console.log(fruits.reverse())
+
+/*
 Print all the elements of array as shown below.
 
   const fullStack = [
     ['HTML', 'CSS', 'JS', 'React'],
     ['Node', 'Express', 'MongoDB']
   ]
-  HTML
-  CSS
-  JS
-  REACT
-  NODE
-  EXPRESS
-  MONGODB
-
-Exercises: Level 3
-Copy countries array(Avoid mutation)
-Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
-Sort the webTechs array and mernStack array
-Extract all the countries contain the word 'land' from the countries array and print it as array
-Find the country containing the hightest number of characters in the countries array
-Extract all the countries contain the word 'land' from the countries array and print it as array
-Extract all the countries containing only four characters from the countries array and print it as array
-Extract all the countries containing two or more words from the countries array and print it as array
-Reverse the countries array and capitalize each country and stored it as an array
-tada CONGRATULATIONS ! tada
-
-
 */
+
+
+//Exercises: Level 3
+countriescopy = countries.concat()
+sortedCountries = countriescopy.sort()
+console.log(sortedCountries)
+
+console.log(webTechs.sort())
+console.log(mernStack.sort())
