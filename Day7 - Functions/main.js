@@ -1,68 +1,101 @@
+function fullName(x){
+  let firstName = "Lydia"
+  let secondName = "Tabasamu"
+  console.log(firstName + " " + secondName)
+}
+fullName()
 
+function funames(fname, lname){
+  return `${fname} ${lname}`
+}
+console.log(funames("Lee", "Bee"))
 
+function addNumbers(x, y){
+  return x + y
+}
+console.log(addNumbers(3, 6))
 
+function areaOfRectangle(length, width){
+  return length * width
+}
+console.log(areaOfRectangle(4, 5))
 
+function perimeterOfRectangle(length, width){
+  return perimeter = 2 * (length + width)
+}
+console.log(perimeterOfRectangle(5, 4))
 
+const volumeOfRectPrism = (length, width, height) => {
+  return length * width * height
+}
+console.log(volumeOfRectPrism(2, 2, 2))
+
+function areaOfCircle(r){
+  return Math.PI * r * r
+}
+console.log(areaOfCircle(7))
+
+function circumOfCircle(r){
+  return 2 * Math.PI * r
+}
+console.log(circumOfCircle(7))
+
+function density(mass, volume){
+  return mass/volume
+}
+console.log(density(3, 7))
+
+function speed(distance, time){
+  return distance * time
+}
+console.log(speed(3, 6))
+
+function weight(mass, gravity = 10){
+  return mass * gravity
+}
+console.log(weight(3))
+
+function convertCelsiusToFahrenheit(oC){
+  oF = (oC * 9/5) + 32
+  return oF
+}
+console.log(convertCelsiusToFahrenheit(5))
+
+function BMI(weight, height){
+  let BMI =  weight / (height * height)
+  if(BMI < 18.5){
+    return `You are underweight, Your BMI is ${BMI}`
+  }else if (BMI  < 24.9){
+    return `You are Normal weight, Your BMI is ${BMI}`
+  }else if (BMI <= 29.9){
+    return `You are overweight, Your BMI is ${BMI}`
+  }else {
+    return  `Your are obese, Your BMI is ${BMI}`
+  }
+}
+console.log(BMI(5, 7))
+
+function findMax(a, b, c){
+  if (a > b & a > c){
+    return a
+  }else if(b > a & b > c){
+    return b
+  }else {
+    return c
+  }
+}
+console.log(findMax(15, 90, 5))
+
+function findmax(...numbers){
+  return Math.max(numbers)
+}
+console.log(findMax(3, 7, 8, 4, 6))
+
+//Exercises: Level 2
 
 /*
 
-Exercises: Level 1
-Declare a function fullName and it print out your full name.
 
-Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
-
-Declare a function addNumbers and it takes two two parameters and it returns sum.
-
-An area of a rectangle is calculated as follows: area = length x width.
- Write a function which calculates areaOfRectangle.
-
-A perimeter of a rectangle is calculated as follows: perimeter= 2x(length + width). 
-Write a function which calculates perimeterOfRectangle.
-
-A volume of a rectangular prism is calculated as follows: volume = length x width x height.
- Write a function which calculates volumeOfRectPrism.
-
-Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates areaOfCircle
-
-Circumference of a circle is calculated as follows: circumference = 2πr.
- Write a function which calculates circumOfCircle
-
-Density of a substance is calculated as follows:density= mass/volume. 
-Write a function which calculates density.
-
-Speed is calculated by dividing the total distance covered by a moving object
- divided by the total amount of time taken. Write a function which calculates a speed of a moving object, speed.
-
-Weight of a substance is calculated as follows: weight = mass x gravity. 
-Write a function which calculates weight.
-
-Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32.
- Write a function which convert oC to oF convertCelsiusToFahrenheit.
-
-Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. 
-Write a function which calculates bmi. BMI is used to broadly define different weight
- groups in adults 20 years old or older.Check if a person is underweight, normal, overweight
-  or obese based the information given below.
-
-The same groups apply to both men and women.
-Underweight: BMI is less than 18.5
-Normal weight: BMI is 18.5 to 24.9
-Overweight: BMI is 25 to 29.9
-Obese: BMI is 30 or more
-Write a function called checkSeason, it takes a month parameter and returns 
-the season:Autumn, Winter, Spring or Summer.
-
-
-Math.max returns its largest argument. Write a function findMax that takes 
-three arguments and returns their maximum with out using Math.max method.
-
-console.log(findMax(0, 10, 5))
-10
-console.log(findMax(0, -10, -2))
-0
-
-
-Exercises: Level 2
 Linear equation is calculated as follows: ax + by + c = 0. Write a function which 
 calculates value of a linear equation, solveLinEquation.
 
@@ -75,6 +108,7 @@ console.log(solveQuadratic(1, -1, -2)) // {2, -1}
 console.log(solveQuadratic(1, 7, 12)) // {-3, -4}
 console.log(solveQuadratic(1, 0, -4)) //{2, -2}
 console.log(solveQuadratic(1, -1, 0)) //{1, 0}
+
 Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
 
 Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
@@ -130,6 +164,8 @@ seven character id. The function return the id.
 
 console.log(userIdGenerator());
 41XTDbE
+
+
 
 Exercises: Level 3
 Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. 
