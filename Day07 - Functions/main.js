@@ -94,8 +94,6 @@ console.log(findMax(3, 7, 8, 4, 6))
 //Exercises: Level 2
 
 /*
-
-
 Linear equation is calculated as follows: ax + by + c = 0. Write a function which 
 calculates value of a linear equation, solveLinEquation.
 
@@ -107,7 +105,7 @@ console.log(solveQuadratic(1, 4, 4)) // {-2}
 console.log(solveQuadratic(1, -1, -2)) // {2, -1}
 console.log(solveQuadratic(1, 7, 12)) // {-3, -4}
 console.log(solveQuadratic(1, 0, -4)) //{2, -2}
-console.log(solveQuadratic(1, -1, 0)) //{1, 0}
+console.log(solveQuadratic(1, -1, 0)) //{1, 0} 
 
 Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
 
@@ -120,6 +118,7 @@ Declare a function name swapValues. This function swaps value of x to y.
 
 swapValues(3, 4) // x => 4, y=>3
 swapValues(4, 5) // x = 5, y = 4
+
 Declare a function name reverseArray. It takes array as a parameter and 
 it returns the reverse of the array (don't use method).
 
@@ -127,6 +126,17 @@ console.log(reverseArray([1, 2, 3, 4, 5]))
 //[5, 4, 3, 2, 1]
 console.log(reverseArray(['A', 'B', 'C']))
 //['C', 'B', 'A']
+*/
+
+
+
+
+
+
+
+/*
+
+
 Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
 
 Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
