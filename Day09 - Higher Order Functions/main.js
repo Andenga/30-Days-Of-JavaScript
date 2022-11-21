@@ -38,6 +38,11 @@ Use find to find the first country containing only six letters in the countries 
 Use findIndex to find the position of the first country containing only six letters in the countries array
 Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
 Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
+
+
+
+
+
 Exercises: Level 2
 Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
 Find the sum of price of products using only reduce reduce(callback))
@@ -46,6 +51,11 @@ Create a function which return an array of objects, which is the letter and the 
 Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
 Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
 Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
+
+
+
+
+
 Exercises: Level 3
 Use the countries information, in the data folder. Sort countries by name, by capital, by population
 

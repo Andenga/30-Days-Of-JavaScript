@@ -128,38 +128,76 @@ console.log(reverseArray(['A', 'B', 'C']))
 //['C', 'B', 'A']
 */
 
+function capitalizeArray(aarr){
+  let newaarr = []
+  for (const capsarr of aarr){
+    newaarr.push(capsarr.toUpperCase())
+  }
+  return newaarr
+}
 
+function addItem(items){
+  let sum = 0
+  for(const sumresult of items){
+    sum += sumresult
+  }
+  return sum
+}
+let val = [1, 2, 3, 4, 5]
+console.log(addItem(val))
 
+const countries = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya',
+  'iceland'
+]
 
+function removeItem(index){
+  return countries.splice(index)
+}
+console.log(removeItem(1))
 
+function sumOfNumbers(){
+  let sum = 0
+  for (i = 0; i < arguments.length; i++){
+    sum += i
+  }
+  return sum
+}
+console.log(sumOfNumbers(1, 2, 3, 4, 5, 6))
 
+function sumOfOdds(){
+  let sum = 0
+  for (i = 0; i < arguments.length;i++){
+    if(i % 2 !== 0){
+      sum += i
+    }
+  }
+  return sum
+}
+console.log(sumOfOdds(1, 2, 3 ,4 ,5 , 6))
+
+function sumOfEven(){
+  let sum = 0
+  for(i = 0; i < arguments.length; i++){
+    if(i % 2 === 0){
+      sum += i
+    }
+  }
+  return sum
+}
+console.log(sumOfEven(2, 3, 4, 5 , 1))
 
 /*
-
-
-Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
-
-Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
-
-Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
-
-Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
-
-Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
-
-Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
-
-Declare a function name evensAndOdds . It takes a positive integer
- as parameter and it counts number of evens and odds in the number.
-
-evensAndOdds(100);
-The number of odds are 50.
-The number of evens are 51.
-Write a function which takes any number of arguments and return the sum of the arguments
-
-sum(1, 2, 3) // -> 6
-sum(1, 2, 3, 4) // -> 10
-
 Writ a function which generates a randomUserIp.
 
 Write a function which generates a randomMacAddress
@@ -169,6 +207,40 @@ it generates a random hexadecimal number. The function return the hexadecimal nu
 
 console.log(randomHexaNumberGenerator());
 '#ee33df'
+
+Write a function name rgbColorGenerator and it generates rgb colors.
+
+rgbColorGenerator()
+rgb(125,244,255)
+Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
+
+Write a function arrayOfRgbColors which return any number of RGB colors in an array.
+
+Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
+
+Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
+
+Write a function generateColors which can generate any number of hexa or rgb colors.
+
+console.log(generateColors('hexa', 3)) // ['#a3e12f', '#03ed55', '#eb3d2b']
+console.log(generateColors('hexa', 1)) // '#b334ef'
+console.log(generateColors('rgb', 3)) // ['rgb(5, 55, 175)', 'rgb(50, 105, 100)', 'rgb(15, 26, 80)']
+console.log(generateColors('rgb', 1)) // 'rgb(33,79, 176)'
+
+*/
+
+
+
+
+
+/*
+Declare a function name evensAndOdds . It takes a positive integer
+ as parameter and it counts number of evens and odds in the number.
+
+evensAndOdds(100);
+The number of odds are 50.
+The number of evens are 51.
+
 Declare a function name userIdGenerator. When this function is called it generates 
 seven character id. The function return the id.
 
@@ -197,24 +269,8 @@ UbGxOFI7UXSWAyKN
 dIV0SSUTgAdKwStr
 '
 
-Write a function name rgbColorGenerator and it generates rgb colors.
 
-rgbColorGenerator()
-rgb(125,244,255)
-Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
 
-Write a function arrayOfRgbColors which return any number of RGB colors in an array.
-
-Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
-
-Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
-
-Write a function generateColors which can generate any number of hexa or rgb colors.
-
-console.log(generateColors('hexa', 3)) // ['#a3e12f', '#03ed55', '#eb3d2b']
-console.log(generateColors('hexa', 1)) // '#b334ef'
-console.log(generateColors('rgb', 3)) // ['rgb(5, 55, 175)', 'rgb(50, 105, 100)', 'rgb(15, 26, 80)']
-console.log(generateColors('rgb', 1)) // 'rgb(33,79, 176)'
 Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
 
 Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number

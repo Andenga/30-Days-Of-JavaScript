@@ -1,3 +1,6 @@
+
+
+
 /*
  
 Exercises: Level 1
@@ -6,6 +9,10 @@ Print the the dog object on the console
 Add name, legs, color, age and bark properties for the dog object. The bark property is a method which return woof woof
 Get name, legs, color, age and bark value from the dog object
 Set new properties the dog object: breed, getDogInfo
+
+
+
+
 
 Exercises: Level 2
 Find the person who has many skills in the users object.
@@ -72,6 +79,11 @@ Get all keys or properties of users object
 Get all the values of users object
 
 Use the countries object to print a country name, capital, populations and languages.
+
+
+
+
+
 
 Exercises: Level 3
 Create an object literal called personAccount. It has firstName, lastName, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is a set of incomes and its description.
