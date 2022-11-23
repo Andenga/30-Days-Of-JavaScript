@@ -230,9 +230,6 @@ console.log(generateColors('rgb', 1)) // 'rgb(33,79, 176)'
 */
 
 
-
-
-
 /*
 Declare a function name evensAndOdds . It takes a positive integer
  as parameter and it counts number of evens and odds in the number.
@@ -246,9 +243,16 @@ seven character id. The function return the id.
 
 console.log(userIdGenerator());
 41XTDbE
+*/
 
 
 
+
+
+
+
+
+/*
 Exercises: Level 3
 Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. 
 It doesn’t take any parameter but it takes two inputs using prompt(). One of the input 
