@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-/*const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
+const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const products = [
@@ -17,22 +10,22 @@ const products = [
   { product: 'tea', price: '' },
 ]
 
+countries.forEach(country => console.log(country)) //forEach iterates an array element
+names.forEach(name => console.log(name.toUpperCase()))
+numbers.forEach(number => console.log(number))
+console.log(countries.map((country) => country.toUpperCase())) //map returns a new array
+console.log(countries.map((country) => country.length))
+console.log(numbers.map((number) => number * number))
+console.log(names.map((name) => name.toUpperCase()))
+//Use map to map the products array to its corresponding prices.
+console.log(countries.filter((country) => country.includes("land")))
+console.log(countries.filter((country) => country.length == 6))//Filters out items fulfilling filtering condition
+console.log(countries.filter((country) => country.length >= 6))
+console.log(countries.filter((country) => country.startsWith("S")))
 
 
-Explain the difference between forEach, map, filter, and reduce.
-Define a callback function before you use it in forEach, map, filter or reduce.
-Use forEach to console.log each country in the countries array.
-Use forEach to console.log each name in the names array.
-Use forEach to console.log each number in the numbers array.
-Use map to create a new array by changing each country to uppercase in the countries array.
-Use map to create an array of countries length from countries array.
-Use map to create a new array by changing each number to square in the numbers array
-Use map to change to each name to uppercase in the names array
-Use map to map the products array to its corresponding prices.
-Use filter to filter out countries containing land.
-Use filter to filter out countries having six character.
-Use filter to filter out countries containing six letters and more in the country array.
-Use filter to filter out country start with 'E';
+
+/*
 Use filter to filter out only prices with values.
 Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
 Use reduce to sum all the numbers in the numbers array.
