@@ -17,26 +17,40 @@ console.log(countries.map((country) => country.toUpperCase())) //map returns a n
 console.log(countries.map((country) => country.length))
 console.log(numbers.map((number) => number * number))
 console.log(names.map((name) => name.toUpperCase()))
-//Use map to map the products array to its corresponding prices.
 console.log(countries.filter((country) => country.includes("land")))
 console.log(countries.filter((country) => country.length == 6))//Filters out items fulfilling filtering condition
 console.log(countries.filter((country) => country.length >= 6))
 console.log(countries.filter((country) => country.startsWith("S")))
+//Use map to map the products array to its corresponding prices.
+//Use filter to filter out only prices with values.
+function getStringLists(x){
+  let strreturn = x.forEach((y) => console.log(y))
+  return strreturn
+}
+console.log(getStringLists(countries))
+console.log(numbers.reduce((acc, cur) => acc + cur, 0))
+/*
+Use reduce to concatenate all the countries and to produce this sentence: 
+Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+*/
+
+
 
 
 
 /*
-Use filter to filter out only prices with values.
-Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
-Use reduce to sum all the numbers in the numbers array.
-Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
-Explain the difference between some and every
 Use some to check if some names' length greater than seven in names array
+
 Use every to check if all the countries contain the word land
+
 Explain the difference between find and findIndex.
+
 Use find to find the first country containing only six letters in the countries array
+
 Use findIndex to find the position of the first country containing only six letters in the countries array
+
 Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
+
 Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
 
 
