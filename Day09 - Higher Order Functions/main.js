@@ -21,50 +21,50 @@ console.log(countries.filter((country) => country.includes("land")))
 console.log(countries.filter((country) => country.length == 6))//Filters out items fulfilling filtering condition
 console.log(countries.filter((country) => country.length >= 6))
 console.log(countries.filter((country) => country.startsWith("S")))
-//Use map to map the products array to its corresponding prices.
-//Use filter to filter out only prices with values.
 function getStringLists(x){
   let strreturn = x.forEach((y) => console.log(y))
   return strreturn
 }
 console.log(getStringLists(countries))
 console.log(numbers.reduce((acc, cur) => acc + cur, 0))
+//Use map to map the products array to its corresponding prices.
+//Use filter to filter out only prices with values.
 /*
 Use reduce to concatenate all the countries and to produce this sentence: 
 Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
 */
+console.log(names.some((namee) => namee.length > 7))//Checks if some of the elements are similiar in one aspect
+console.log(countries.every((country) => country.includes("land")))//Checks if all elements are similiar in one aspect
+console.log(countries.find((country) => country.length == 6))//Returns first element which satisfies the condition
+console.log(countries.findIndex((country) => country.length ==6 ))//Returns the position of the first element satisfying the condition
+console.log(countries.findIndex((country) => country == "Norway"))
+console.log(countries.findIndex((country) => country == "Russia"))
+
+//Exercises: Level 2
 
 
 
 
 
 /*
-Use some to check if some names' length greater than seven in names array
+Find the total price of products by chaining two or more array iterators
+(eg. arr.map(callback).filter(callback).reduce(callback))
 
-Use every to check if all the countries contain the word land
-
-Explain the difference between find and findIndex.
-
-Use find to find the first country containing only six letters in the countries array
-
-Use findIndex to find the position of the first country containing only six letters in the countries array
-
-Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
-
-Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
-
-
-
-
-
-Exercises: Level 2
-Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
 Find the sum of price of products using only reduce reduce(callback))
-Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
-Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
-Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
+
+Declare a function called categorizeCountries which returns an array of countries which have some common pattern
+(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
+
+Create a function which return an array of objects, which is the letter and the number of times the 
+letter use to start with a name of a country.
+
+Declare a getFirstTenCountries function and return an array of ten countries. Use different functional
+ programming to work on the countries.js array
+
 Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
-Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
+
+Find out which letter is used many times as initial for a country name from the countries array
+ (eg. Finland, Fiji, France etc)
 
 
 
