@@ -1,4 +1,8 @@
 
+
+
+
+
 /*
 Exercises:Level 1
 Display the countries array as a table
@@ -14,4 +18,5 @@ Write an error message using console.error()
 
 Exercises:Level 3
 Check the speed difference among the following loops: while, for, for of, forEach
+
 */
