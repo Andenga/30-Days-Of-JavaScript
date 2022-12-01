@@ -9,27 +9,16 @@ console.warn("This is a warning message")
 console.error("This is an error message ")
 
 console.time("while loop")
-let x = 5
-while (x < 2){
+let y = 5
+while (y < 2){
     console.log(x)
 }
 console.timeEnd("while loop")
 
 console.time("for loop")
-let x = 5
-for (x = 0; x < 5; x++){
-    console.log(x)
+y = 5
+for (y = 0; y < 5; y++){
+    console.log(y)
 }
 console.timeEnd("for loop")
 
-
-
-
-
-
-
-
-/*
-Check the speed difference among the following loops: while, for, for of, forEach
-
-*/
