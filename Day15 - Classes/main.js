@@ -1,4 +1,12 @@
-
+class Animal{
+    constructor(name, age, color, legs){
+        console.log(this)
+        this.name = name
+        this.age = age
+        this.color = color
+        this.legs = legs
+    }
+}
 
 
 
