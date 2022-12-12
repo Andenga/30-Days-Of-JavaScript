@@ -1,4 +1,8 @@
 const skills = ['HTML', 'CSS', 'JS', 'React','Node', 'Python']
+
+let sskills = JSON.stringify(skills)
+console.log(sskills)
+
 let age = 250;
 let isMarried = true
 const student = {
@@ -8,6 +12,18 @@ const student = {
   isMarried:true,
   skills:['HTML', 'CSS', 'JS', 'React','Node', 'Python', ]
 }
+
+
+
+/*
+
+
+Stringify the age variable
+Stringify the isMarried variable
+Stringify the student object
+
+
+*/
 const txt = `{
     "Alex": {
         "email": "alex@alex.com",
@@ -105,14 +121,13 @@ const txt = `{
 }
 `
 
+
+
+
 /*
 
 
 Exercises Level 1
-Change skills array to JSON using JSON.stringify()
-Stringify the age variable
-Stringify the isMarried variable
-Stringify the student object
 
 
 Exercises Level 2
