@@ -1,36 +1,38 @@
-class Person {
-    constructor(firstName, lastName, age, country, city) {
-      console.log(this) // Check the output from here
-      this.firstName = firstName
-      this.lastName = lastName
+class Animal {
+    constructor(name, age, color, legs) {
+      this.name = name
       this.age = age
-      this.country = country
-      this.city = city
+      this.color = color
+      this.legs = legs
+    }
+    getdetails() {
+      const details  = this.name + ' ' + this.age + " " + this.color + " " + this.legs
+      return details
     }
   }
   
-  const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
-  
-  console.log(person1)
-
-  class Student extends Person {
-    saySomething() {
-      console.log('I am a child of the person class')
+const Animal1 = new Animal('goat', 250, 'black', 4)
+const Animal2 = new Animal('duck',  28, 'white', 2) 
+console.log(Animal1.getdetails())
+console.log(Animal2)
+class lion extends Animal {
+    soundmade() {
+      console.log('I roar and I am the king of the jungle.')
     }
   }
-  
-  const s1 = new Student('Asabeneh', 'Yetayeh', 'Finland', 250, 'Helsinki')
-  console.log(s1)
-  console.log(s1.saySomething())
-
-/* 
-
-Exercises Level 1
-Create an Animal class. The class will have name, age, color, legs properties and create different methods
-
-Create a Dog and Cat child class from the Animal Class.
+const l1 = new lion('Mufasa', 20, "brown", 4)
+console.log(l1)
+console.log(l1.soundmade())
+console.log(l1.getdetails())
 
 
+
+
+
+
+
+
+/*
 
 Exercises Level 2
 Override the method you create in Animal class
