@@ -14,8 +14,21 @@ class Animal {
   const Animal1 = new Animal('dog',  250, 'black', 4)
   const Animal2 = new Animal('geese', 28, 'white', 2)
   
-  console.log(person1.getFullName())
-  console.log(person2.getFullName())
+  console.log(Animal1.getdetails())
+  console.log(Animal2)
+
+class lion extends Animal(){
+    animalsound(){
+        console.log("I bark very loudly, this is my super power")
+    }
+}
+
+const lion1 = new Animal("dog", 3, "brown", 4)
+
+console.log(lion1)
+console.log(lion1.animalsound())
+console.log(lion1.getdetails())
+
 
 
 /* 
