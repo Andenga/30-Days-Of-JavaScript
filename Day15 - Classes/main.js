@@ -1,35 +1,27 @@
-class Animal {
-    constructor(name, age, color, legs) {
-      this.name = name
+class Person {
+    constructor(firstName, lastName, age, country, city) {
+      console.log(this) // Check the output from here
+      this.firstName = firstName
+      this.lastName = lastName
       this.age = age
-      this.color = color
-      this.legs = legs
-    }
-    getdetails() {
-      const details = this.name + ' ' + this.age + this.color + " " + this.legs
-      return details
+      this.country = country
+      this.city = city
     }
   }
   
-  const Animal1 = new Animal('dog',  250, 'black', 4)
-  const Animal2 = new Animal('geese', 28, 'white', 2)
+  const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
   
-  console.log(Animal1.getdetails())
-  console.log(Animal2)
+  console.log(person1)
 
-class lion extends Animal(){
-    animalsound(){
-        console.log("I bark very loudly, this is my super power")
+  class Student extends Person {
+    saySomething() {
+      console.log('I am a child of the person class')
     }
-}
-
-const lion1 = new Animal("dog", 3, "brown", 4)
-
-console.log(lion1)
-console.log(lion1.animalsound())
-console.log(lion1.getdetails())
-
-
+  }
+  
+  const s1 = new Student('Asabeneh', 'Yetayeh', 'Finland', 250, 'Helsinki')
+  console.log(s1)
+  console.log(s1.saySomething())
 
 /* 
 
